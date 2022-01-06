@@ -257,6 +257,12 @@ p.copy {
         width: 250px;
     }
 
+    .lupa{
+        position:relative;
+        top: 0px;
+        left: -90px;
+    }
+
     .main-header-top-bar, .main-navbar{
         max-width: 1200px;
         margin: auto;
