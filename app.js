@@ -9,6 +9,8 @@ app.get('/', function(req, res){
     res.sendFile(path.join(__dirname, './views/home.html'));
 });
 
-app.listen('3000', function(req, res){
-    console.log('El servidor esta funcionando en el puerto 3000');
+app.set('port', process.env.PORT || 3000)
+
+app.listen(app.get('port'), function(req, res){
+    console.log('El servidor esta funcionando en el puerto ' + app.get('port'));
 });
